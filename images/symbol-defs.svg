@@ -207,5 +207,8 @@
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.3" d="M2.936 7.127l-0.103-0.098-1.55 1.468 5.461 5.21 11.474-10.946-1.54-1.469-9.934 9.468-3.808-3.633z"></path>
 </symbol>
 
+<symbol id="icon-burger" viewBox="0 0 32 32">
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
 </defs>
 </svg>

@@ -9,11 +9,11 @@
     align-items: center;
 
 
-
-
     .header-line {
+        
         margin: 0;
         border: 1px solid #ECECEC;
+    
 
     }
 
@@ -30,11 +30,13 @@
         gap: 50px;
 
         list-style-type: none;
+        
 
     }
 
 
     &__link {
+        
 
         position: relative;
 
@@ -58,6 +60,12 @@
         }
 
     }
+
+   
+}
+.header__menu {
+
+    display: none;
 }
 
 .contact-header {
