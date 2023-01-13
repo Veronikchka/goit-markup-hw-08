@@ -1,0 +1,121 @@
+.header {
+    width: 1200px;
+    margin: auto;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    background-color: $color-bckgr-secondary;
+
+    display: flex;
+    align-items: center;
+
+
+
+
+    .header-line {
+        margin: 0;
+        border: 1px solid #ECECEC;
+
+    }
+
+
+    &__list {
+
+        min-width: 45px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 93px;
+        margin-right: auto;
+        padding-left: 0px;
+        display: flex;
+        gap: 50px;
+
+        list-style-type: none;
+
+    }
+
+
+    &__link {
+
+        position: relative;
+
+        display: block;
+        height: 16px;
+        margin-left: 0px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+        color: $color-text-primary;
+        text-decoration: none;
+
+        @extend %transition;
+
+        &:hover,
+        &:focus {
+            color: $color-text-action;
+        }
+
+    }
+}
+
+.contact-header {
+
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    &__link {
+        text-decoration: none;
+        @include display(flex, space-between, center);
+        padding: 6px 22px;
+        font-family: Roboto;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.02em;
+
+        color: $color-heading-subtitle;
+
+        @extend %transition;
+
+        &:hover,
+        &:focus {
+
+            color: $color-button-hover;
+
+        }
+    }
+
+
+
+    &__link:last-child {
+
+        padding: 6px 0px;
+
+    }
+
+
+    &__icon {
+        margin-right: 10px;
+        fill: currentColor;
+
+    }
+
+}
+
+.studio::after {
+
+    @extend %underline;
+
+}
+
+.portfolio::after {
+
+    @extend %underline;
+
+}
