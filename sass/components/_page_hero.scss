@@ -40,7 +40,7 @@
         padding-right: 452px;
         padding-top: 200px;
         padding-bottom: 200px;
-        @include display;
+        @include display(flex, center, center);
         flex-direction: column;
     }
 

@@ -9,15 +9,6 @@
     align-items: center;
 
 
-    .header-line {
-        
-        margin: 0;
-        border: 1px solid #ECECEC;
-    
-
-    }
-
-
     &__list {
 
         min-width: 45px;
@@ -63,10 +54,8 @@
 
    
 }
-.header__menu {
 
-    display: none;
-}
+ 
 
 .contact-header {
 
@@ -127,3 +116,22 @@
     @extend %underline;
 
 }
+ .header-line {
+
+     margin: 0;
+     border: 1px solid #ECECEC;
+
+
+ }
+
+.header__burger {
+
+    display: none;
+
+    @media (max-width:768px){
+        display: block;
+
+        
+    }
+}
+

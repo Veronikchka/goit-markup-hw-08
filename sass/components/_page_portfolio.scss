@@ -76,7 +76,7 @@
     transform: translateY(100%);
     transition: transform 0.3s cubic-bezier(0.2, 0, 0.2, 1);
     transition-property: transform;
-    @extend %transition_lines;
+    @extend %transition_links;
 
     .portfolio__item:hover & {
 
