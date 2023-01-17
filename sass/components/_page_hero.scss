@@ -1,4 +1,6 @@
 .hero {
+      margin-left: auto;
+      margin-right: auto;
       
         background-color: $color-bckgr-secondary;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
@@ -54,7 +56,7 @@
 
 
         &__image {
-            max-width: 480px;
+            max-width: 768px;
             padding-left: 204px;
             padding-right: 204px;
            
