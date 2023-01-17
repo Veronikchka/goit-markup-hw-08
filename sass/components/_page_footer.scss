@@ -187,26 +187,7 @@
 }
 
 
-.list-client__link {
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
-    fill: #AFB1B8;
-    display: flex;
-    justify-content: center;
 
-    transition-property: fill, border;
-    @extend %transition_shadow;
-
-    &:hover,
-    &:focus {
-
-        fill: $color-button-hover;
-        border: 1px solid $color-button-hover;
-    }
-}
 
 
 .footer__text {

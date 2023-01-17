@@ -1,13 +1,40 @@
 .header {
-    width: 1200px;
-    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+    padding-bottom: 25px;
     padding-top: 24px;
+  
+   
+
+    @media screen and (min-width: 480px){
+        width: 480px;
+    
+    }
+
+    @media screen and (min-width: 768px) {
+            width: 768px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+    }
+    
+
+    @media screen and (min-width: 1200px) {
+    width: 1200px;
+  
+ 
     padding-bottom: 25px;
     background-color: $color-bckgr-secondary;
-
     display: flex;
-    align-items: center;
-
+    align-items: center; 
+    
+     
+    }
+    
 
     &__list {
 
@@ -28,9 +55,7 @@
 
     &__link {
         
-
         position: relative;
-
         display: block;
         height: 16px;
         margin-left: 0px;
@@ -42,29 +67,38 @@
         letter-spacing: 0.02em;
         color: $color-text-primary;
         text-decoration: none;
-
+    
         @extend %transition;
 
         &:hover,
         &:focus {
             color: $color-text-action;
+
+
+        }
+
+        @media (max-width:767px) {
+
+            display: none;
+            
         }
 
     }
 
-   
-}
-
  
+
+}
 
 .contact-header {
 
     margin: 0;
     padding: 0;
+@media (min-width:1200px) {
+    
 
     display: flex;
     justify-content: space-between;
-    gap: 40px;
+    gap: 40px;}
 
     &__link {
         text-decoration: none;
@@ -102,9 +136,13 @@
         fill: currentColor;
 
     }
+@media (max-width:767px) {
+
+    display: none;
 
 }
 
+}
 .studio::after {
 
     @extend %underline;
@@ -124,14 +162,36 @@
 
  }
 
-.header__burger {
+
+
+.menu-button {
+
+display: inline-flex;
+background-color: transparent;
+color: black;
+padding: 0;
+border: none;
+margin: 0;
+
+@media (min-width: 768px) {
+    display: none;
+    
+}
+
+}
+
+.menu-button .icon-cross {
 
     display: none;
+}
 
-    @media (max-width:768px){
-        display: block;
+.menu-button.is-open .icon-cross {
 
-        
-    }
+    display: block;
+}
+
+.menu-button.is-open .icon-menu {
+
+    display: none;
 }
 
