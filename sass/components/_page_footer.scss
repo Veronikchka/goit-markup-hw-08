@@ -207,7 +207,7 @@
 
 
     position: absolute;
-    
+
       width: 450px;
       height: 50px;
       padding-left: 16px;
@@ -227,242 +227,246 @@
    
 
 
-
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    
+
     .footer {
     
             background-color: $color-bckgr-footer;
             text-decoration: none;
     
     
-      &__container {
-
-                position:relative;
+            &__container {
+    
+                position: relative;
                 width: 768px;
-                height: 468px;
+                height: 464px;
                 margin: 0 auto;
-     
-}
+                display: flex;
+                flex-direction: column;
+    
+            }
+    
+            &__address {
+    
+    
+                width: 480px;
+                text-align: center;
+    
+                margin-top: 0px;
+                margin-bottom: 12px;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1.7;
+                letter-spacing: 0.03em;
+                color: $color-bckgr-secondary;
+    
+                display: inline-block;
+                flex-basis: content;
+            }
+    
+            &__contact {
+    
+                width: 480px;
+                text-align: center;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 1, 7;
+                letter-spacing: 0.03em;
+                color: rgba(255, 255, 255, 0.6);
+                text-decoration: none;
+    
+                display: inline-block;
+                margin-bottom: 12px;
+            }
+    
+            &__contact:last-child {
+                margin-bottom: 60px;
+            }
+    
+            &__text {
+    
+               position: absolute;
+               top:-55px;
 
-&__address {
+                width: 480px;
+                text-align: center;
+    
+                margin-bottom: 0;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 1.14;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                color: $color-bckgr-secondary;
+            }
+    
+            &__link {
+    
+                @include display(flex, center, center);
+                width: 100%;
+                height: 100%;
+                background-color: rgba(255, 255, 255, 0.1);
+                fill: $color-bckgr-secondary;
+                border-radius: 50%;
+    
+                transition-property: background-color;
+    
+    
+                &:hover,
+                &:focus {
+    
+                    background-color: $color-button-hover;
+                }
+    
+            }
+    
+        }
+    
+    
+    
+        .continer-contacts-bottom {
+    
+            display: flex;
+            flex-direction: column;
+        }
+    
+    
+        .footer-links__form {
+    
+            position: absolute;
+            top: 62px;
+            left: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 1102px;
+            margin-right: 94px;
+    
+        }
+    
+        .join__text {
+    
+            position: absolute;
+            text-align: center;
+            top: 0px;
+            left: 32%;
+            width: 100px;
+    
+        }
+    
+    
+        .email__form {
+    
+            position: absolute;
+            bottom: 130px;
+            left: 159px;
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
 
-    width: 232px;
+       
+    
+        .email__input::placeholder {
+    
+            color: rgba(255, 255, 255, 0.6);
+    
+        }
+    
+        .button {
+    
+            width: 200px;
+            height: 50px;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.6;
+            text-align: center;
+            letter-spacing: 0.06em;
+            color: $color-bckgr-secondary;
+            background: $color-button-hover;
+    
+    
+            &:hover,
+            &:focus {
+                background-color: $color-button-hover;
+                box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                border-radius: 4px;
+                border-style: none;
+            }
+    
+        }
+    
+        .submit-button {
+            position: absolute;
+            bottom: 60px;
+            left: 284px;
+    
+    
+            margin-left: auto;
+            margin-right: auto;
+    
+            transition-property: background-color, color, box-shadow;
+    
+    
+            &__icon {
+    
+                width: 24px;
+                height: 24px;
+                background-color: $color-button-hover;
+                fill: $border;
+    
+            }
+    
+    
+        }
+    
+        .footer__text {
+    
+    
+            margin-bottom: 20px;
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+    
+            color: $color-bckgr-secondary;
+        }
+    
+        .email__form input {
+    
+    
+            position: absolute;
+            bottom: -25px;
+    
+            width: 450px;
+            height: 50px;
+            padding-left: 16px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+    
+            background-color: $color-bckgr-footer;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+        }
+
+.footer__contacts {
     position: absolute;
-    top: 48px;
-    left: -25px;
-    margin-top:0 ;
-    margin-bottom: 0;
-
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: $color-bckgr-secondary;
-
-    display: inline-block;
-    flex-basis: content;
-}
-
-&__contact:last-child {
-
-    position: absolute;
-        top: 104px;
-        left: -90px;
-        text-align: center;
-        padding-top: 12px;
-        width:323px;
+    top:62px;
+    left: -170px;
+    
 }
 
 
-&__contact {
-    position: absolute;
-        top: 82px;
-        left: 2px;
-
-    text-align: center;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1, 7;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-    text-decoration: none;
-
-
-
-&__text {
-    position: absolute;
-    top:248px;
-    left:280px;
-
-    width: 207px;
-    text-align: center;
-
-    margin-bottom: 20px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: $color-bckgr-secondary;
 }
-
-.footer__text:last-child {
-    position: absolute;
-    top:117px;
-}
-
-&__link {
-
-    @include display(flex, center, center);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.1);
-    fill: $color-bckgr-secondary;
-    border-radius: 50%;
-
-    transition-property: background-color;
-
-
-    &:hover,
-    &:focus {
-
-        background-color: $color-button-hover;
-    }
-
-}
-
-}
-
-
-
-}
-.continer-contacts-bottom {
-    display: flex;
-    flex-direction: column;
-  
-}
-
-
-.footer-links__form {
-
-    width:216px;
-    position: absolute;
-    top: 89px;
-    right: 101px;
-
-}
-
-.email__form {
-    width: 480px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.email__input::placeholder {
-
-    color: rgba(255, 255, 255, 0.6);
-
-}
-
-.button {
-
-    width: 200px;
-    height: 50px;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.6;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: $color-bckgr-secondary;
-    background: $color-button-hover;
-
-
-    &:hover,
-    &:focus {
-        background-color: $color-button-hover;
-        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        border-radius: 4px;
-        border-style: none;
-    }
-
-}
-
-.submit-button {
-
-position: absolute;
-top: 354px;
-left: 284px;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    transition-property: background-color, color, box-shadow;
-
-
-    &__icon {
-
-        width: 24px;
-        height: 24px;
-        background-color: $color-button-hover;
-        fill: $border;
-
-    }
-
-
-}
-  .footer__text {
-
-position: absolute;
-top:248px;
-left:281px;
-      margin-bottom: 20px;
-
-      font-weight: 700;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-
-      color: $color-bckgr-secondary;
-  }
-
-.email__form input {
-position: absolute;
-top:284px;
-left: 159px;
-    width: 450px;
-    height: 50px;
-    padding-left: 16px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    background-color: $color-bckgr-footer;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-}
-
-.list-media__footer {
-    position: absolute;
-    top: 0px;
-    left: 316px;
-    width: 206px;
-}
-
-}
-
-
-
-
-
-
+    
 
 @media (min-width:1200px) {
     
@@ -486,6 +490,7 @@ left: 159px;
             }
     
             &__address {
+              
                 width: 220px;
                 margin-top: 0px;
                 margin-bottom: 12px;
