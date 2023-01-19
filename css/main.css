@@ -344,6 +344,54 @@ body {
   color: #F5F4FA;
 }
 
+.footer__logo {
+  width: 231px;
+  margin: 0;
+  margin-right: 94px;
+}
+@media (max-width: 767px) {
+  .footer__logo {
+    margin-top: 60px;
+    width: 480px;
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .footer__logo {
+    position: absolute;
+    top: 60px;
+    left: 115px;
+    width: 154px;
+    margin-right: 0;
+  }
+  .footer__logo .logo-footer {
+    margin-bottom: 0;
+  }
+}
+
+.logo-blue-footer {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+}
+
+.logo-footer {
+  display: block;
+  margin-bottom: 28px;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #FFFFFF;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,218 +975,558 @@ body {
   cursor: pointer;
 }
 
-.footer {
-  background-color: #2F303A;
-  text-decoration: none;
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media (max-width: 767px) {
+  .footer {
+    background-color: #2F303A;
+    text-decoration: none;
+  }
+  .footer__container {
+    width: 480px;
+    height: 604px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer__address {
+    width: 480px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    display: inline-block;
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
+  }
+  .footer__contact {
+    width: 480px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .footer__contact:last-child {
+    margin-bottom: 60px;
+  }
+  .footer__text {
+    width: 480px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .footer__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+    border-radius: 50%;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+  }
+  .footer__link:hover, .footer__link:focus {
+    background-color: #2196F3;
+  }
+  .continer-contacts-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-links__form {
+    margin-left: auto;
+    margin-right: auto;
+    width: 480px;
+    margin-right: 94px;
+  }
+  .email__form {
+    width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .email__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .button {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+  }
+  .button:hover, .button:focus {
+    background-color: #2196F3;
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-style: none;
+  }
+  .submit-button {
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition-property: background-color, color, -webkit-box-shadow;
+    transition-property: background-color, color, -webkit-box-shadow;
+    transition-property: background-color, color, box-shadow;
+    transition-property: background-color, color, box-shadow, -webkit-box-shadow;
+  }
+  .submit-button__icon {
+    width: 24px;
+    height: 24px;
+    background-color: #2196F3;
+    fill: #EEEEEE;
+  }
+  .footer__text {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .email__form input {
+    width: 450px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
 }
-.footer__container {
-  width: 1200px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .footer {
+    background-color: #2F303A;
+    text-decoration: none;
+    width: 146px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+  }
+  .footer__container {
+    position: relative;
+    width: 768px;
+    height: 468px;
+    margin: 0 auto;
+  }
+  .footer__address {
+    width: 232px;
+    position: absolute;
+    top: 48px;
+    left: -25px;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    display: inline-block;
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
+  }
+  .footer__contact:last-child {
+    position: absolute;
+    top: 104px;
+    left: -90px;
+    text-align: center;
+    padding-top: 12px;
+    width: 323px;
+  }
+  .footer__contact {
+    position: absolute;
+    top: 82px;
+    left: 2px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+  }
+  .footer__contact__text {
+    position: absolute;
+    top: 248px;
+    left: 280px;
+    width: 207px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .footer__contact__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+    border-radius: 50%;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+  }
+  .footer__contact__link:hover, .footer__contact__link:focus {
+    background-color: #2196F3;
+  }
+  .footer .continer-contacts-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer-links__form {
+    width: 216px;
+    position: absolute;
+    top: 89px;
+    right: 101px;
+  }
+  .email__form {
+    width: 480px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .email__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .button {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+  }
+  .button:hover, .button:focus {
+    background-color: #2196F3;
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-style: none;
+  }
+  .submit-button {
+    position: absolute;
+    top: 354px;
+    left: 284px;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition-property: background-color, color, -webkit-box-shadow;
+    transition-property: background-color, color, -webkit-box-shadow;
+    transition-property: background-color, color, box-shadow;
+    transition-property: background-color, color, box-shadow, -webkit-box-shadow;
+  }
+  .submit-button__icon {
+    width: 24px;
+    height: 24px;
+    background-color: #2196F3;
+    fill: #EEEEEE;
+  }
+  .footer__text {
+    position: absolute;
+    top: 248px;
+    left: 281px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .email__form input {
+    position: absolute;
+    top: 284px;
+    left: 159px;
+    width: 450px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
 }
-.footer__address {
-  margin-top: 0px;
-  margin-bottom: 12px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: #FFFFFF;
-  display: inline-block;
-  -ms-flex-preferred-size: content;
-      flex-basis: content;
+@media (min-width: 1200px) {
+  .footer {
+    background-color: #2F303A;
+    text-decoration: none;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .footer__container {
+    width: 1200px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__address {
+    margin-top: 0px;
+    margin-bottom: 12px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    display: inline-block;
+    -ms-flex-preferred-size: content;
+        flex-basis: content;
+  }
+  .footer__contact {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1, 7;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 12px;
+  }
+  .footer__text {
+    padding-top: 10px;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .footer__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+    border-radius: 50%;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+  }
+  .footer__link:hover, .footer__link:focus {
+    background-color: #2196F3;
+  }
+  .continer-contacts-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer-links__form {
+    width: 210px;
+    margin-right: 94px;
+  }
+  .email__form {
+    width: 207px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .email__input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input::-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .email__input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .button {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background: #2196F3;
+  }
+  .button:hover, .button:focus {
+    background-color: #2196F3;
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    border-style: none;
+  }
+  .submit-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-left: 163px;
+    margin-top: 47px;
+    gap: 10px;
+    -webkit-transition-property: background-color, color, -webkit-box-shadow;
+    transition-property: background-color, color, -webkit-box-shadow;
+    transition-property: background-color, color, box-shadow;
+    transition-property: background-color, color, box-shadow, -webkit-box-shadow;
+  }
+  .submit-button__icon {
+    width: 24px;
+    height: 24px;
+    background-color: #2196F3;
+    fill: #EEEEEE;
+  }
+  .footer__text {
+    padding-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .email__form input {
+    width: 358px;
+    height: 50px;
+    padding-left: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
 }
-.footer__contact {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1, 7;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  display: inline-block;
-  margin-bottom: 12px;
-}
-.footer__logo {
-  width: 231px;
-  margin: 0;
-  margin-right: 94px;
-}
-.footer__text {
-  padding-top: 10px;
-  margin: 0;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-.footer__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  fill: #FFFFFF;
-  border-radius: 50%;
-  -webkit-transition-property: background-color;
-  transition-property: background-color;
-}
-.footer__link:hover, .footer__link:focus {
-  background-color: #2196F3;
-}
-
-.logo-blue-footer {
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #2196F3;
-}
-
-.logo-footer {
-  display: block;
-  margin-bottom: 28px;
-  font-family: "Raleway";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #FFFFFF;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.continer-contacts-bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.footer-links__form {
-  width: 210px;
-  margin-right: 94px;
-}
-
-.email__form {
-  width: 207px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.email__input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.email__input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.email__input:-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.email__input::-ms-input-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.email__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.button {
-  width: 200px;
-  height: 50px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
-  letter-spacing: 0.06em;
-  color: #FFFFFF;
-  background: #2196F3;
-}
-.button:hover, .button:focus {
-  background-color: #2196F3;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  border-style: none;
-}
-
-.submit-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 163px;
-  margin-top: 47px;
-  gap: 10px;
-  -webkit-transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, -webkit-box-shadow;
-  transition-property: background-color, color, box-shadow;
-  transition-property: background-color, color, box-shadow, -webkit-box-shadow;
-}
-.submit-button__icon {
-  width: 24px;
-  height: 24px;
-  background-color: #2196F3;
-  fill: #EEEEEE;
-}
-
-.footer__text {
-  padding-top: 10px;
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
-
-.email__form input {
-  width: 358px;
-  height: 50px;
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #2F303A;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-          filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-}
-
 .section-occupation {
   padding-bottom: 94px;
 }
@@ -1363,12 +1751,18 @@ body {
             flex-direction: column;
   }
   .card {
+    width: 270px;
+    height: 428px;
     text-align: center;
     margin: 0;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+  .card img {
+    width: 270px;
+    height: 260px;
   }
   .card__box {
     padding-top: 30px;
@@ -1988,12 +2382,18 @@ body {
             flex-direction: column;
   }
   .card {
+    width: 270px;
+    height: 428px;
     text-align: center;
     margin: 0;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+  .card img {
+    width: 270px;
+    height: 260px;
   }
   .card__box {
     padding-top: 30px;
