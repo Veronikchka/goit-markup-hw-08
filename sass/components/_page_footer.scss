@@ -9,17 +9,17 @@
     
       &__container {
 
-
+          position: relative;
           width: 480px;
           height:604px;
           margin: 0 auto;
           display: flex;
           flex-direction: column;
 
-
       }
 
       &__address {
+
 
         width: 480px;
         text-align: center;
@@ -38,6 +38,7 @@
       }
 
       &__contact {
+        
          width: 480px;
           text-align: center;
           font-style: normal;
@@ -56,10 +57,11 @@
          }
 
       &__text {
+
          width: 480px;
          text-align: center;
     
-          margin-bottom: 20px;
+         margin-bottom: 0;
           font-weight: 700;
           font-size: 14px;
           line-height: 1.14;
@@ -92,23 +94,39 @@
 
 
 
-
   .continer-contacts-bottom {
+    
       display: flex;
       flex-direction: column;
   }
 
 
   .footer-links__form {
+
+    position: absolute;
+    bottom: 360px;
+    left: -175px;
     margin-left: auto;
     margin-right: auto;
-      width: 480px;
-      margin-right: 94px;
-      
-
+    width: 480px;
+    margin-right: 94px;
+  
   }
 
+  .join__text {
+
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    left: 37%;
+    
+  }
+
+
   .email__form {
+
+    position: absolute;
+    bottom: 120px;
       width: 480px;
       display: flex;
       flex-direction: column;
@@ -147,14 +165,16 @@
 
   }
 
-  .submit-button {
+      .submit-button {
+     position: absolute;
+     bottom: 60px;
+     left:30%;
 
-margin-left: auto;
-margin-right: auto;
-      
+
+       margin-left: auto;
+       margin-right: auto;
     
-
-      transition-property: background-color, color, box-shadow;
+       transition-property: background-color, color, box-shadow;
 
 
       &__icon {
@@ -185,6 +205,9 @@ margin-right: auto;
 
   .email__form input {
 
+
+    position: absolute;
+    
       width: 450px;
       height: 50px;
       padding-left: 16px;
@@ -197,7 +220,11 @@ margin-right: auto;
       border-radius: 4px;
   }
 
-   }
+  
+
+}
+
+   
 
 
 
@@ -308,8 +335,10 @@ margin-right: auto;
 }
 
 }
-  
 
+
+
+}
 .continer-contacts-bottom {
     display: flex;
     flex-direction: column;
@@ -325,13 +354,6 @@ margin-right: auto;
     right: 101px;
 
 }
-
-//.join__text {
-
-    width: 146px;
-    position: absolute;
-    top:0;
-    left: 0px;}
 
 .email__form {
     width: 480px;
@@ -381,8 +403,6 @@ left: 284px;
     margin-left: auto;
     margin-right: auto;
 
-
-
     transition-property: background-color, color, box-shadow;
 
 
@@ -428,6 +448,14 @@ left: 159px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
 }
+
+.list-media__footer {
+    position: absolute;
+    top: 0px;
+    left: 316px;
+    width: 206px;
+}
+
 }
 
 
@@ -617,7 +645,7 @@ left: 159px;
 
         .join__text {
             position: absolute;
-                top: 0;
+                top: 0px;
                 left: 316px;
         }
     
@@ -639,3 +667,9 @@ left: 159px;
         }
 }
 
+.list-media__footer {
+    position: absolute;
+        top: 38px;
+        left: 316px;
+        width: 206px;
+}
