@@ -33,6 +33,7 @@
 .card {
     width: 450px;
     height: 622px;
+    padding-bottom: 24px;
     text-align: center;
     margin-bottom: 30px;
     background: $color-bckgr-secondary;
@@ -40,7 +41,7 @@
     border-radius: 0px 0px 4px 4px;
 
 & img {
-
+    display: block;
     width: 450px;
     height: 460px;
 }
@@ -106,6 +107,7 @@
 
     gap: 10px;
     padding-left: 0;
+   
 
     &__item {
         width: 44px;
@@ -322,6 +324,7 @@
 
     gap: 10px;
     padding-left: 0;
+  
     
 
     &__item {

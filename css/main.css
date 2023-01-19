@@ -1084,26 +1084,8 @@ body {
   }
   .join__text {
     position: absolute;
-    text-align: center;
     top: 10px;
-    left: 37%;
-  }
-  .email__form {
-    position: absolute;
-    bottom: 120px;
-    width: 480px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 830px;
   }
   .email__input::-webkit-input-placeholder {
     color: rgba(255, 255, 255, 0.6);
@@ -1156,7 +1138,9 @@ body {
     fill: #EEEEEE;
   }
   .footer__text {
-    margin-bottom: 20px;
+    position: absolute;
+    bottom: 194px;
+    left: 0px;
     font-weight: 700;
     font-size: 14px;
     line-height: 16px;
@@ -1166,6 +1150,8 @@ body {
   }
   .email__form input {
     position: absolute;
+    bottom: 130px;
+    left: 15px;
     width: 450px;
     height: 50px;
     padding-left: 16px;
@@ -1612,6 +1598,7 @@ body {
 .card {
   width: 450px;
   height: 622px;
+  padding-bottom: 24px;
   text-align: center;
   margin-bottom: 30px;
   background: #FFFFFF;
@@ -1620,6 +1607,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .card img {
+  display: block;
   width: 450px;
   height: 460px;
 }
@@ -2092,6 +2080,7 @@ body {
 
 .list__description {
   margin: 0;
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -2243,6 +2232,7 @@ body {
 .card {
   width: 450px;
   height: 622px;
+  padding-bottom: 24px;
   text-align: center;
   margin-bottom: 30px;
   background: #FFFFFF;
@@ -2251,6 +2241,7 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 .card img {
+  display: block;
   width: 450px;
   height: 460px;
 }

@@ -60,7 +60,7 @@
 
          width: 480px;
          text-align: center;
-    
+         
          margin-bottom: 0;
           font-weight: 700;
           font-size: 14px;
@@ -116,25 +116,12 @@
   .join__text {
 
     position: absolute;
-    text-align: center;
     top: 10px;
-    left: 37%;
-    
+    width: 830px;
   }
 
 
-  .email__form {
-
-    position: absolute;
-    bottom: 120px;
-      width: 480px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      margin-top: 20px;
-      margin-bottom: 20px;
-  }
+  
 
   .email__input::placeholder {
     
@@ -191,8 +178,10 @@
 
   .footer__text {
 
-   
-      margin-bottom: 20px;
+   position: absolute;
+   bottom: 194px; 
+   left: 0px;
+     
 
       font-weight: 700;
       font-size: 14px;
@@ -207,6 +196,8 @@
 
 
     position: absolute;
+    bottom: 130px;
+    left:15px;
 
       width: 450px;
       height: 50px;
