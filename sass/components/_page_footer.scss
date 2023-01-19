@@ -51,8 +51,7 @@
           display: inline-block;
           margin-bottom: 12px;
       }
-
-      &__contact:last-child {
+         &__contact:last-child {
             margin-bottom: 60px ;
          }
 
@@ -106,6 +105,7 @@
       width: 480px;
       margin-right: 94px;
       
+
   }
 
   .email__form {
@@ -149,8 +149,8 @@
 
   .submit-button {
 
-  margin-left: auto;
-  margin-right: auto;
+margin-left: auto;
+margin-right: auto;
       
     
 
@@ -197,7 +197,7 @@
       border-radius: 4px;
   }
 
-}
+   }
 
 
 
@@ -280,9 +280,12 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: $color-bckgr-secondary;
-
 }
 
+.footer__text:last-child {
+    position: absolute;
+    top:117px;
+}
 
 &__link {
 
@@ -441,11 +444,12 @@ left: 159px;
             background-color: $color-bckgr-footer;
             text-decoration: none;
             padding-top: 60px;
-            padding-bottom: 60px;
+            
     
             &__container {
-    
+                position: relative;
                 width: 1200px;
+                height: 191px;
                 margin: 0 auto;
                 display: flex;
                 flex-direction: row;
@@ -454,6 +458,7 @@ left: 159px;
             }
     
             &__address {
+                width: 220px;
                 margin-top: 0px;
                 margin-bottom: 12px;
                 font-style: normal;
@@ -463,8 +468,7 @@ left: 159px;
                 letter-spacing: 0.03em;
                 color: $color-bckgr-secondary;
     
-                display: inline-block;
-                flex-basis: content;
+                
             }
     
             &__contact {
@@ -483,6 +487,7 @@ left: 159px;
     
          
             &__text {
+              
                 padding-top: 10px;
                 margin: 0;
                 margin-bottom: 20px;
@@ -570,7 +575,9 @@ left: 159px;
     
         .submit-button {
     
-    
+            position: absolute;
+            top: 0;
+            right: 16px;
             @include display(flex, center, center);
             margin-left: 163px;
             margin-top: 47px;
@@ -592,9 +599,10 @@ left: 159px;
     
     
     
-    
-    
         .footer__text {
+            position: absolute;
+            top: 0px;
+            left: 616px;
             padding-top: 10px;
             margin-bottom: 20px;
     
@@ -606,9 +614,18 @@ left: 159px;
     
             color: $color-bckgr-secondary;
         }
+
+        .join__text {
+            position: absolute;
+                top: 0;
+                left: 316px;
+        }
     
         .email__form input {
     
+            position: absolute;
+            top:48px;
+            left:616px;
             width: 358px;
             height: 50px;
             padding-left: 16px;
