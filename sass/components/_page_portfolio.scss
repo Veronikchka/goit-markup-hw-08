@@ -239,7 +239,10 @@
     .portfolio__list {
 
         width: 738px;
-        height: 1272px;
+        height: 2144px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
         display: flex;
         flex-wrap: wrap;
         gap: 30px;
@@ -387,9 +390,9 @@
 
 .portfolio__list {
 
-    width: 1600px;
-    padding-left: 215px;
-    padding-right: 215px;
+    width: 1170px;
+   
+   
     margin-left: auto;
     margin-right: auto;
     gap: 30px;
