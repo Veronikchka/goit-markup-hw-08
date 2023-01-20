@@ -173,6 +173,12 @@ padding: 0;
 border: none;
 margin: 0;
 
+&:hover,
+&:focus {
+
+    fill:#2196F3;
+}
+
 @media (min-width: 768px) {
     display: none;
     
