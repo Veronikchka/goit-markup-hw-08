@@ -45,6 +45,20 @@
           </svg>+38 096 111 11 11</a>
       
       </div>
+
+      <div class="container">
+        <button type="button" class="menu-button js-open-menu" aria-controls="mobile-menu" data-menu-button
+          aria-expanded="false">
+      
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use class="icon-menu" href="./images/symbol-defs.svg#icon-burger"></use>
+      
+          </svg>
+        </button>
+      </div>
+      
+      </div>
+
     </div>
   </header>
  <!--main Портфоліо-->
@@ -70,7 +84,8 @@
         
           <li class="portfolio__item">
             <div class="portfolio__image-area">
-            <img src="./images/img-8.jpg" alt="Наш персонал" width="370">
+            <img srcset="./images/img-8.jpg 1x, ./images/img-8@2x.jpg 2x"
+            src="./images/img-8.jpg" alt="Наш персонал" width="370">
             <div class="portfolio__overlay">
               <p>Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати
               вичерпні відомості про компанію чи приватну особу.</p>
@@ -87,7 +102,8 @@
 
         
           <li class="portfolio__item">
-            <img src="./images/img-9.jpg" alt="плакат Нью-Орлеан проти Голден Стар" width="370">
+            <img srcset="./images/img-9.jpg 1x, ./images/img-9@2x.jpg 2x"
+            src="./images/img-9.jpg" alt="плакат Нью-Орлеан проти Голден Стар" width="370">
             <div class="portfolio__data-block">
             <h3 class="portfolio__project">Постер New Orlean vs Golden Star</h3>
             <h4 class="portfolio__description">Дизайн</h4>
@@ -97,7 +113,8 @@
 
          
           <li class="portfolio__item">
-            <img src="./images/img-10.jpg" alt="Ресторан Сіфуд" width="370">
+            <img srcset="./images/img-10.jpg 1x, ./images/img-10@2x.jpg 2x"
+            src="./images/img-10.jpg" alt="Ресторан Сіфуд" width="370">
             <div class="portfolio__data-block">
             <h3 class="portfolio__project">Ресторан Seafood</h3>
             <h4 class="portfolio__description">Додаток</h4>
@@ -107,7 +124,8 @@
          
           
           <li class="portfolio__item">
-            <img src="./images/img-11.jpg" alt="" width="370">
+            <img srcset="./images/img-11.jpg 1x, ./images/img-11@2x.jpg 2x"
+            src="./images/img-11.jpg" alt="" width="370">
             <div class="portfolio__data-block">
             <h3 class="portfolio__project">Проєкт Prime</h3>
             <h4 class="portfolio__description">Маркетинг</h4>
@@ -116,7 +134,8 @@
           
     
           <li class="portfolio__item">
-            <img src="./images/img-12.jpg" alt="Проєкт Боксис" width="370">
+            <img srcset="./images/img-12.jpg 1x, ./images/img-12@2x.jpg 2x"
+            src="./images/img-12.jpg" alt="Проєкт Боксис" width="370">
             <div class="portfolio__data-block">
             <h3 class="portfolio__project">Проєкт Boxes</h3>
             <h4 class="portfolio__description">Додаток</h4>
@@ -126,7 +145,8 @@
         
           
           <li class="portfolio__item">
-            <img src="./images/img-13.jpg" alt="Сайт Натхнення без меж" width="370">
+            <img srcset="./images/img-13.jpg 1x, ./images/img-13@2x.jpg 2x"
+            src="./images/img-13.jpg" alt="Сайт Натхнення без меж" width="370">
             <div class="portfolio__data-block">
             <h3 class="portfolio__project">Inspiration has no Borders</h3>
             <h4 class="portfolio__description">Веб-сайт</h4>
@@ -136,7 +156,8 @@
          
           
           <li class="portfolio__item">
-            <img src="./images/img-14.jpg" alt="Видання Лімітид Едішн" width="370">
+            <img srcset="./images/img-14.jpg 1x, ./images/img-14@2x.jpg 2x"
+            src="./images/img-14.jpg" alt="Видання Лімітид Едішн" width="370">
             <div class="portfolio__data-block">
             <h3 class="portfolio__project">Видання Limited Edition</h3>
             <h4 class="portfolio__description">Дизайн</h4>
@@ -146,7 +167,8 @@
           
           
           <li class="portfolio__item">
-            <img src="./images/img-15.jpg" alt="Проєкт Леб" width="370">
+            <img srcset="./images/img-15.jpg 1x, ./images/img-15@2x.jpg 2x"
+            src="./images/img-15.jpg" alt="Проєкт Леб" width="370">
             <div class="portfolio__data-block">
             <h3 class="portfolio__project">Проєкт LAB</h3>
             <h4 class="portfolio__description">Маркетинг</h4>
@@ -155,7 +177,8 @@
           
           
           <li class="portfolio__item">
-            <img src="./images/img-16.jpg" alt="Зростаючий бізнес" width="370">
+            <img srcset="./images/img-16.jpg 1x, ./images/img-16@2x.jpg 2x"
+            src="./images/img-16.jpg" alt="Зростаючий бізнес" width="370">
             <div class="portfolio__data-block">
             <h3 class="portfolio__project">Growing Business</h3>
             <h4 class="portfolio__description">Додаток</h4>
@@ -237,5 +260,62 @@
     </div>
   
   </footer>
+
+  <!--Modal-->
+
+  <div class="menu-container js-menu-container" id="mobile-menu">
+  
+    <button class="js-close-menu icon-cross__menu" type="button" data-modal-close>
+      <svg width="18" height="18">
+        <use href="./images/symbol-defs.svg#icon-close-menu" width="18" height="18"></use>
+      </svg>
+    </button>
+  
+    <ul class="header__list__mobile list-bullets-none">
+      <nav>
+  
+        <li><a class="header__link__mobile" href="">Студія</a></li>
+        <li><a class="header__link__mobile" target="_self" href="./portfolio.html">Портфоліо</a></li>
+        <li><a class="header__link__mobile" href="">Контакти</a></li>
+    </ul>
+  
+  
+    <address class="footer__contacts__menu">
+      <a class="footer__contact__menu" href="tel:+380961111111">+38 096 111 11 11</a>
+      <a class="footer__contact__menu" href="mailto:info@devstudio.com">info@devstudio.com</a>
+  
+    </address>
+  
+    </nav>
+  
+    <div class="footer-links__form__menu">
+  
+  
+      <ul class="media-links__menu">
+  
+        <li>
+          <a class="media-links__item first" href="#">Instagram</a>
+        </li>
+        <li>
+          <a class="media-links__item" href="#">Twitter</a>
+        </li>
+        <li>
+          <a class="media-links__item" href="#">Facebook</a>
+        </li>
+        <li>
+          <a class="media-links__item last" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  
+  </div>
+
+
+<script src="./js/modal.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+  integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+  crossorigin="anonymous"></script>
+<script defer src="js/mobile-menu.js"></script>
+
 </body>
 </html>
