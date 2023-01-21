@@ -482,6 +482,7 @@ body {
 .contact-header {
   margin: 0;
   padding: 0;
+  margin-left: 294px;
 }
 @media (min-width: 1200px) {
   .contact-header {
