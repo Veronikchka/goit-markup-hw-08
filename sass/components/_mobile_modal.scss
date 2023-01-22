@@ -3,8 +3,10 @@
 position:fixed;
 top:0;
 left: 0;
+min-width:480px;
 width: 100vw;
-height:796px;
+min-height: 796px;
+height:100vw;
 
 padding: 48px 40px;
 
@@ -112,6 +114,7 @@ font-weight: 500;
 font-size: 24px;
 line-height: 28px;
 letter-spacing: 0.02em;
+font-style: normal;
 
 color: #757575;}
 
@@ -139,7 +142,7 @@ color: #757575;}
     color: #2196F3;
 
     border-right: 1px solid rgba(33, 33, 33, 0.2);
-
+    text-decoration-line: none;
    
    
 }

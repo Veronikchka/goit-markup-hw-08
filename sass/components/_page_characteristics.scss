@@ -1,7 +1,7 @@
 
 .characteristics__list {
 
-   
+
     width: 480px;
     padding-left: 15px;
     padding-right: 15px;
@@ -32,6 +32,7 @@
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
+    text-align: center;
     text-transform: uppercase;
 
     color: #212121;
@@ -52,71 +53,93 @@
 
 }
 
+.headings {
+    font-weight: 700;
+        font-size: 28px;
+        line-height: 0.8;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 30px;
+}
+
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-.characteristics {
-    width: 768px;
-    margin: 30px auto;
-  
+    .characteristics {
+        width: 768px;
+        margin: 30px auto;
 
-}    
-
-.characteristics__list {
-
-    display: flex;
-    
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 768px;
-    gap: 30px;
-
-}
-
-
-.list__item {
-display: flex;    
-flex-direction: column;
-width: 354px;
-margin-right: 0;
-
-}     
-
-.list__image {
-
-    margin-bottom: 30px;
-    width: 354px;
-    height: 120px;
 
     }
-    
-.list__heading {
-    width: 354px;
-    margin: 0;
-    margin-bottom: 10px;
 
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
+    .headings {
 
-    color: #212121;
+        font-weight: 700;
+            font-size: 28px;
+            line-height: 0.8;
+            text-align: center;
+            letter-spacing: 0.03em;
+            margin-bottom: 30px;
+        
+            color: #212121;
+    }
 
-}
+    .characteristics__list {
 
-.list__description {
+        display: flex;
 
-    margin: 0;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 768px;
+        gap: 30px;
+        padding: 0;
 
-    color: #757575;
+    }
 
 
-}
+    .list__item {
+        display: flex;
+        flex-direction: column;
+        width: 354px;
+        margin-right: 0;
+
+    }
+
+    .list__image {
+
+        margin-bottom: 30px;
+        width: 354px;
+        height: 120px;
+
+    }
+
+    .list__heading {
+        width: 354px;
+        margin: 0;
+        margin-bottom: 10px;
+
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+        color: #212121;
+
+    }
+
+    .list__description {
+
+        margin: 0;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+        letter-spacing: 0.03em;
+
+        color: #757575;
+
+
+    }
 }
 
 
