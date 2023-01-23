@@ -1,14 +1,28 @@
 
-.characteristics__list {
+.characteristics__section {
+    padding-top: 60px;
+}
 
+.characteristics__container {
 
     width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
 }
+.characteristics__list {
+margin:0;
+padding: 0;
+
+}
+
+.list__item {
+   width:450px;
+}
+
+
 
 .list__image {
 
@@ -25,7 +39,9 @@
 
 
 .list__heading {
-    margin: 0;
+   
+    
+    margin-right: 0;
     margin-bottom: 10px;
 
     font-weight: 700;
@@ -65,16 +81,10 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
 
-    .characteristics {
-        width: 768px;
-        margin: 30px auto;
-
-
-    }
 
     .headings {
 
-        font-weight: 700;
+            font-weight: 700;
             font-size: 28px;
             line-height: 0.8;
             text-align: center;
@@ -84,13 +94,20 @@
             color: #212121;
     }
 
+.characteristics__container {
+
+    width: 768px;
+ 
+
+}
+
+
     .characteristics__list {
 
         display: flex;
 
         flex-direction: row;
         flex-wrap: wrap;
-        width: 768px;
         gap: 30px;
         padding: 0;
 
@@ -117,7 +134,7 @@
         width: 354px;
         margin: 0;
         margin-bottom: 10px;
-
+        text-align: left;
         font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
@@ -143,31 +160,54 @@
 }
 
 
+
+
+
 @media (min-width:1200px) {
 
+    .list {
+        display: flex;
+    }
 
-    .characteristics {
+    .headings {
 
-        padding-top: 94px;
-        padding-bottom: 94px;
-        margin: auto;
-
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        text-align: center;
+        letter-spacing: 0.03em;
+        
+        padding-bottom: 50px;
+            color: #212121;
     }
 
 
-    .characteristics__list {
+   .headings {
 
-        margin: 0;
-        display: flex;
-        justify-content: space-between;
+    width: 1270px;
+   }
+
+
+    .characteristics__container {
+
         width: 1200px;
         margin-left: auto;
-        margin-right: auto;
-        gap: 30px;
-
-        padding: 0;
+        margin-left: auto;
         padding-left: 15px;
         padding-right: 15px;
+      
+    }
+    
+
+    .characteristics__list {
+
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+      
+        gap: 30px;
+
 
     }
 

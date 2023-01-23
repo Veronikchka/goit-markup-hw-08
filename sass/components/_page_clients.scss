@@ -2,15 +2,26 @@
  
  .client {
 
-   margin: 0;
-   width: 480px;
-   margin-left: auto;
-   margin-right: auto;
-   margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  
+   
+  
 
  }
 
- .list {
+ .client__container {
+
+    width: 480px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+ }
+
+.clients__list {
 
     display: flex;
     justify-content: center;
@@ -19,6 +30,7 @@
     flex-wrap: wrap;
     gap: 30px;
     padding: 0;
+    margin:0;
    
 
  }
@@ -52,19 +64,21 @@
 
 .client {
 
-        width: 768px;
-     margin: 0;
+   padding-top: 60px;
+   padding-bottom: 60px;
    
 }
+.client__container {
 
-.section {
-
+  width: 768px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-        .list-client__link {
+
+    .list-client__link {
             width: 226px;
             height: 92px;
            
@@ -75,17 +89,21 @@
 
 @media (min-width: 1200px) {
 
-    .client {
-    width: 1200px;
-    margin: 94px auto;
-}
 
-.list {
+
+.client__container {
 
     width:1200px;
-    display: flex;
-    flex-wrap: nowrap;
+    
 }
+
+.clients__list {
+
+    display: flex;
+    flex-wrap: nowrap;}
+
+
+
 
 .list-client__link {
     width: 170px;
@@ -108,5 +126,9 @@
         fill: $color-button-hover;
         border: 1px solid $color-button-hover;
     }
+}
+.headings {
+    padding:0;
+    margin-bottom: 50px;
 }
 }
