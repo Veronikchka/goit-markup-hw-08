@@ -1,8 +1,8 @@
 .hero {
-    margin-left: auto;
-    margin-right: auto;
-
-
+   
+  
+padding-top:118px;
+padding-bottom: 118px; 
     background-color: $color-bckgr-secondary;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
@@ -22,15 +22,14 @@
     background-attachment: scroll;
 
     &__text {
-        width: 360px;
-        margin-top: 0;
-        margin-bottom: 30px;
-        font-weight: 900;
+       
+       
+    font-weight: 900;
         font-size: 26px;
-        line-height: 1.6;
+        line-height: 42px;
+        text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        text-align: center;
         color: $color-bckgr-secondary;
 
 
@@ -39,14 +38,11 @@
 
 
     &__image {
-        max-width: 480px;
-        margin: auto;
+    width:480px;
+    margin-left: auto;
+    margin-right: auto;
 
-
-        padding-left: 140px;
-        padding-right: 140px;
-        padding-top: 118px;
-        padding-bottom: 118px;
+        
         @include display(flex, center, center);
         flex-direction: column;
     }
@@ -69,21 +65,21 @@
             background-image: url('../images/img-background768@2x.jpg');
         }
 
-        &__image {
-            max-width: 768px;
-            padding-left: 204px;
-            padding-right: 204px;
-
-        }
+         &__image {
+    width: 768px;
+             margin-left: auto;
+             margin-right: auto;
 
 
     }
 }
-
+}
 .hero {
     @media (min-width:1200px) {
-        max-width: 1600px;
-        height: 600px;
+
+        padding-top: 200px;
+            padding-bottom: 200px;
+      
         background-color: $color-bckgr-secondary;
         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
@@ -98,9 +94,7 @@
         }
 
         &__text {
-            width: 696px;
-            margin-top: 0;
-            margin-bottom: 30px;
+            
             font-weight: 900;
             font-size: 44px;
             line-height: 1.36;
@@ -109,14 +103,6 @@
         }
 
 
-        &__image {
-            max-width: 1600px;
-            width: 696px;
-            
-            padding-top: 200px;
-            padding-bottom: 200px;
-
-        }
 
     }
 }

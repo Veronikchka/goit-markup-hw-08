@@ -581,8 +581,8 @@ body {
   }
 }
 .hero {
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: #FFFFFF;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-background480@1x.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-background480@1x.jpg");
@@ -598,24 +598,18 @@ body {
   }
 }
 .hero__text {
-  width: 360px;
-  margin-top: 0;
-  margin-bottom: 30px;
   font-weight: 900;
   font-size: 26px;
-  line-height: 1.6;
+  line-height: 42px;
+  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  text-align: center;
   color: #FFFFFF;
 }
 .hero__image {
-  max-width: 480px;
-  margin: auto;
-  padding-left: 140px;
-  padding-right: 140px;
-  padding-top: 118px;
-  padding-bottom: 118px;
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -646,16 +640,16 @@ body {
 }
 @media (min-width: 768px) {
   .hero__image {
-    max-width: 768px;
-    padding-left: 204px;
-    padding-right: 204px;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media (min-width: 1200px) {
   .hero {
-    max-width: 1600px;
-    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     background-color: #FFFFFF;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-background1200@1x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-background1200@1x.jpg");
@@ -669,20 +663,9 @@ body {
 }
 @media (min-width: 1200px) {
   .hero__text {
-    width: 696px;
-    margin-top: 0;
-    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-  }
-}
-@media (min-width: 1200px) {
-  .hero__image {
-    max-width: 1600px;
-    width: 696px;
-    padding-top: 200px;
-    padding-bottom: 200px;
   }
 }
 
@@ -2644,9 +2627,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  min-width: 480px;
   width: 100vw;
-  min-height: 796px;
   height: 100vw;
   padding: 48px 40px;
   background-color: white;
