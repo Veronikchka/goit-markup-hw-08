@@ -1,6 +1,7 @@
 
 .characteristics__section {
     padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .characteristics__container {
@@ -101,7 +102,6 @@ padding: 0;
 
 }
 
-
     .characteristics__list {
 
         display: flex;
@@ -154,6 +154,7 @@ padding: 0;
         letter-spacing: 0.03em;
 
         color: #757575;
+        padding-bottom: 0;
 
 
     }
@@ -164,6 +165,11 @@ padding: 0;
 
 
 @media (min-width:1200px) {
+
+    .characteristics__section {
+            padding-top: 94px;
+            padding-bottom: 94px;
+        }
 
     .list {
         display: flex;
@@ -234,6 +240,7 @@ padding: 0;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
+        text-align: left;
 
         color: #212121;
 
@@ -246,7 +253,7 @@ padding: 0;
         font-size: 14px;
         line-height: 1.7;
         letter-spacing: 0.03em;
-
+padding-bottom: 0;
         color: #757575;
 
 
