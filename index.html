@@ -14,7 +14,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/main.min.css">
 
 
 </head>
@@ -23,17 +23,18 @@
 
 <body>
 
-  <header>
-    <div class="header">
-      <div class="logo-one"><a class="logo" href=""><span class="logo-blue-footer">Web</span>Studio</a></div>
-      </nav>
-
+  <header class="header">
+    <div class="header__container">
+      <nav>
+      <div><a class="logo" href=""><span class="logo-blue-footer">Web</span>Studio</a></div>
+      
       <ul class="header__list">
         <li><a class="header__link studio" href="">Студія</a></li>
         <li><a class="header__link" target="_self" href="./portfolio.html">Портфоліо</a></li>
         <li><a class="header__link contacts" href="">Контакти</a></li>
       </ul>
       </nav>
+
       <div class="contact-header">
         <a class="contact-header__link" href="mailto:info@devstudio.com">
           <svg class="contact-header__icon" width="16" height="12">
@@ -46,23 +47,20 @@
             <use href="./images/symbol-defs.svg#icon-telephone">
             </use>
           </svg>+38 096 111 11 11</a>
-
       </div>
 
       <div class="container">
         <button type="button" class="menu-button js-open-menu" aria-controls="mobile-menu" data-menu-button
           aria-expanded="false">
-
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
             <use class="icon-menu" href="./images/symbol-defs.svg#icon-burger"></use>
-
           </svg>
         </button>
       </div>
 
     </div>
 
-    </div>
+    
 
   </header>
 

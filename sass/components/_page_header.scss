@@ -1,135 +1,90 @@
-.header{
-    display: flex;
-    justify-content: space-around;
-    margin-left: auto;
-    margin-right: auto;
-    height: 80px;
-    padding-bottom: 25px;
-    padding-top: 24px;
 
+.header {
+   
+    
+    padding-bottom: 26px;
+    padding-top: 26px;
+    background-color: $color-bckgr-secondary;
 
+}
 
-    @media screen and (min-width: 480px) {
-       
-     width:480px;
-     
-    }
-
-    @media screen and (min-width: 768px) {
-        width: 768px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-
-
-    }
-
-
-    @media screen and (min-width: 1200px) {
-        width: 1200px;
-        padding-bottom: 25px;
-        background-color: $color-bckgr-secondary;
-        display: flex;
-        align-items: center;
-
-
-
-
-    }
-
-
-    &__list {
-
-        min-width: 45px;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-left: 93px;
+.header__container { 
+    
+   padding-left: 15px;
+   padding-right: 15px;
+    
+    
+    @media screen and (min-width:480px)  {
+        
+        width: 480px;    
+        margin-left: auto;
         margin-right: auto;
-        padding-left: 0px;
-        display: flex;
+    }
+   
+    @media screen and (min-width:480px) {
+    
+            width: 768px;
+           
+    }
+     }
 
-        gap: 50px;
 
-        list-style-type: none;
+@media screen and (max-width: 767px) {
+  .header__list { 
+        display: none;}
+  .contact-header {
+    display: none;
+}
+}
 
+nav {
+    display: flex;
+    flex-direction: row;
+}
+.contact-header__link {
+    text-decoration: none;
+    @include display(flex, space-between, center);
+    
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+   
+
+    color: $color-heading-subtitle;
+
+    @extend %transition;
+
+    &:hover,
+    &:focus {
+
+        color: $color-button-hover;
 
     }
 
-
-    &__link {
-
-        position: relative;
-        display: block;
-        height: 16px;
-        margin-left: 0px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        color: $color-text-primary;
-        text-decoration: none;
-
-        @extend %transition;
-
-        &:hover,
-        &:focus {
-            color: $color-text-action;
-
-
-        }
-
-        @media (max-width:767px) {
-
-            display: none;
-
-        }
-
-    }
+       
+}
 
 
 
+.header__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .contact-header {
 
-    margin: 0;
-    padding: 0;
-    margin-left: 294px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 
-
-    @media (min-width:1200px) {
-
-
-        display: flex;
-        justify-content: space-between;
-        gap: 40px;
-    }
-
-    &__link {
-        text-decoration: none;
-        @include display(flex, space-between, center);
-        padding: 6px 22px;
-        font-family: Roboto;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-
-        color: $color-heading-subtitle;
-
-        @extend %transition;
-
-        &:hover,
-        &:focus {
-
-            color: $color-button-hover;
-
-        }
-    }
-
-
+   
 
     &__link:last-child {
 
@@ -144,11 +99,7 @@
 
     }
 
-    @media (max-width:767px) {
-
-        display: none;
-
-    }
+    
 
 }
 
@@ -164,6 +115,7 @@
 
 }
 
+
 .header-line {
 
     margin: 0;
@@ -171,7 +123,6 @@
 
 
 }
-
 
 
 .menu-button {
@@ -212,26 +163,3 @@
 }
 
 
-@media (max-width: 1199px) {
-
-
-    .contact-header__link {
-
-
-        padding-right: 0;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 0.8;
-        letter-spacing: 0.02em;
-
-
-    }
-
-    .contact-header__link:last-child {
-        display: block;
-        text-align: left;
-        padding-left: 22px;
-
-
-    }
-}

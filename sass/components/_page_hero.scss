@@ -109,7 +109,7 @@ padding-bottom: 118px;
        .hero__text {
 
             margin-top: 0; 
-            width: 969px;
+            width: 696px;
            
             font-weight: 900;
             font-size: 44px;
@@ -124,4 +124,12 @@ padding-bottom: 118px;
          
 
 
+    }
+
+    .hero {
+        @media (max-width: 479px) {
+
+&__image {
+        width:auto;}
+        }
     }
