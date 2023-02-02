@@ -7,8 +7,8 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 0,8;
     letter-spacing: 0.03em;
     color: black;
 
@@ -19,26 +19,36 @@
 @media (max-width: 1200px) {
 
     font-weight: 700;
-    font-size: 24px;
-    line-height: 1.16;
+    font-size: 26px;
+    line-height: 0,8;
     letter-spacing: 0.03em;
+   
     
 }
 }
 
  .footer__logo {
+
+    @media screen and (max-width:479px) {
+        
+        margin-right: 0;
+        
+    }
+
     
      width: 231px;
      margin: 0;
      margin-right: 94px;
      
+     
 
      @media (max-width:767px) {
         margin-top: 60px;
-        width: 480px;
+        width: 100%;
         text-align: center;
         
      }
+     
      @media (min-width:768px) {
     position: absolute;
     top:60px;

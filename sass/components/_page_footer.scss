@@ -13,6 +13,11 @@
 
       &__container {
 
+        @media screen and (max-width: 479px) {
+                width: 100%;
+                
+            }
+
           position: relative;
           width: 480px;
           height: 604px;
@@ -23,6 +28,10 @@
       }
 
       &__address {
+        @media screen and (max-width: 479px) {
+                width: 100%;
+                
+            }
 
 
           width: 480px;
@@ -42,6 +51,10 @@
       }
 
       &__contact {
+        @media screen and (max-width: 479px) {
+                width: 100%;
+                
+            }
 
           width: 480px;
           text-align: center;
@@ -62,6 +75,10 @@
       }
 
       &__text {
+        @media screen and (max-width: 479px) {
+                width: 100%;
+                
+            }
 
           width: 480px;
           text-align: center;
@@ -108,9 +125,30 @@
 
 
   .list-media__footer {
+    
+    @media screen and (max-width: 767px) {
+        
+                position: absolute;
+                top: 284px;
+                left: 50%;
+                transform: translate(-50%);
+       
+    
+    }
 
-      margin-top: 254px;
-      margin-left: -178px;
+    @media screen and (min-width:768px) {
+
+       
+                position: absolute;
+                top: 101px;
+                left: 473px;
+                width: 206px;
+            
+        
+    }
+
+   
+   
   }
 
 
@@ -156,6 +194,13 @@
   }
 
   .submit-button {
+    @media screen and (max-width: 479px) {
+        position: absolute;
+            width: auto;
+            left:50%;
+            transform: translate(-50%);
+    
+        }
       position: absolute;
       bottom: 60px;
       left: 30%;
@@ -197,6 +242,12 @@
 
   .email__form input {
 
+    @media screen and (max-width: 479px) {
+            width: auto;
+            left: 50%;
+            transform: translate(-50%);
+    
+        }
 
       position: absolute;
       bottom: 130px;
@@ -332,10 +383,10 @@
       .footer-links__form {
 
           position: absolute;
-          top: 62px;
-          left: 200px;
+          top: 101px;
+          left: 473px;
           width: 206px;
-          margin-right: 94px;
+        
 
       }
 
@@ -343,9 +394,10 @@
 
           position: absolute;
           text-align: center;
-          top: 0px;
-          left: 350px;
-          width: 100px;
+          top: -34px;
+          left: 50px;
+          width:fit-content;
+         
 
       }
 
@@ -557,8 +609,9 @@
 
 
       .footer-links__form {
-          width: 210px;
-          margin-right: 94px;
+          
+         margin-left: 314px;
+         margin-top: 34px;
 
       }
 
@@ -666,9 +719,5 @@
       }
   }
 
-  .list-media__footer {
-      position: absolute;
-      top: 38px;
-      left: 316px;
-      width: 206px;
-  }
+  
+  
