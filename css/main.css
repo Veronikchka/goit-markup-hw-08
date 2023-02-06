@@ -576,7 +576,7 @@ body {
           align-items: center;
   font-family: Roboto;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 0, 8;
   letter-spacing: 0.02em;
   width: 160px;
@@ -585,6 +585,7 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .contact-header__link {
+    font-size: 14px;
     line-height: 1, 14;
     gap: 10px;
   }
@@ -594,7 +595,7 @@ body {
   fill: #2196F3;
 }
 .contact-header__link:last-child {
-  margin-top: 6px;
+  margin-top: 10px;
 }
 @media screen and (min-width: 1200px) {
   .contact-header__link:last-child {
@@ -1876,6 +1877,12 @@ body {
     text-align: center;
     margin-bottom: 30px;
     background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+  }
+  .card__last {
+    margin-bottom: 0;
   }
   .card img {
     width: 100%;
@@ -1893,6 +1900,9 @@ body {
     -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+  .card__last {
+    margin-bottom: 0;
   }
   .card img {
     display: block;
@@ -2569,7 +2579,18 @@ body {
 }
 .characteristics__section {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .characteristics__section {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .characteristics__section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .characteristics__container {

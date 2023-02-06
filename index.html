@@ -175,8 +175,21 @@
 
       <ul class="list-bullets-none background-team__list">
         <li class="card">
-          <img srcset="./images/Demiyanenko.jpg 1x, ./images/Demiyanenko.jpg 2x" src="./images/Demiyanenko.jpg"
-            alt="фото Ігора Дем'яненка" width="270" />
+
+          <picture>
+            <source
+            srcset="./images/Demianenko@1x_1200.jpg 1x, ./images/Demianenko@2x_1200.jpg 2x"
+            media="(min-width: 1200px)"/>
+
+            <source srcset="./images/Demianenko@1x_768.jpg 1x, ./images/Demianenko@2x_768.jpg 2x"
+            media="(min-width: 768px)"/>
+
+            <source srcset="./images/Demianenko@1x_480.jpg 1x, ./images/Demianenko@2x_480.jpg 2x"
+            media="(max-width: 767px)"/>
+
+            <img src="./images/Demianenko@1x_480.jpg" alt="фото Ігора Дем'яненкa"/>
+          </picture>
+          
           <div class="card__box">
             <h3 class="card__name">Ігор Дем'яненко</h3>
             <p class="card__position">Product Designer</p>
@@ -221,8 +234,17 @@
           </div>
         </li>
         <li class="card">
-          <img srcset="./images/Repina@1x.jpg 1x, ./images/Repina@2x.jpg 2x" src="./images/img-5.jpg"
-            alt="фото Ольги Рєпіної" width="270" />
+          
+          <picture>
+            <source srcset="./images/Repina@1x_1200.jpg 1x, ./images/Repina@2x_1200.jpg 2x" media="(min-width: 1200px)" />
+          
+            <source srcset="./images/Repina@1x_768.jpg 1x, ./images/Repina@2x_768.jpg 2x" media="(min-width: 768px)" />
+          
+            <source srcset="./images/Repina@1x_480.jpg 1x, ./images/Repina@2x_480.jpg 2x" media="(max-width: 767px)" />
+          
+            <img src="./images/Repina@1x_480.jpg" alt="фото Ольги Репіної" />
+          </picture>
+
           <div class="card__box">
             <h3 class="card__name">Ольга Рєпіна</h3>
             <p class="card__position">Frontend Developer</p>
@@ -270,8 +292,17 @@
           </div>
         </li>
         <li class="card">
-          <img srcset="./images/img-6.jpg, ./images/Tarasov@1x.jpg 1x, ./images/Tarasov@2x.jpg 2x"
-            src="./images/img-6.jpg" alt="фото Миколи Тарасова" width="270" />
+
+                    <picture>
+            <source srcset="./images/Tarasov@1x_1200.jpg 1x, ./images/Tarasov@2x_1200.jpg 2x" media="(min-width: 1200px)" />
+          
+            <source srcset="./images/Tarasov@1x_768.jpg 1x, ./images/Tarasov@2x_768.jpg 2x" media="(min-width: 768px)" />
+          
+            <source srcset="./images/Tarasov@1x_480.jpg 1x, ./images/Tarasov@2x_480.jpg 2x" media="(max-width: 767px)" />
+          
+            <img src="./images/Tarasov@1x_480.jpg" alt="фото Миколи Тарасова" />
+          </picture>
+
           <div class="card__box">
             <h3 class="card__name">Микола Тарасов</h3>
             <p class="card__position">Marketing</p>
@@ -316,9 +347,18 @@
             </div>
           </div>
         </li>
-        <li class="card">
-          <img srcset="./images/Ermakov@1x.jpg 1x, ./images/Ermakov@2x.jpg 2x" src="./images/img-7.jpg"
-            alt="Михайла Єрмакова" width="270" />
+        <li class="card card__last">
+         
+          <picture>
+            <source srcset="./images/Ermakov@1x_1200.jpg 1x, ./images/Ermakov@2x_1200.jpg 2x" media="(min-width: 1200px)" />
+          
+            <source srcset="./images/Ermakov@1x_768.jpg 1x, ./images/Ermakov@2x_768.jpg 2x" media="(min-width: 768px)" />
+          
+            <source srcset="./images/Ermakov@1x_480.jpg 1x, ./images/Ermakov@2x_480.jpg 2x" media="(max-width: 767px)" />
+          
+            <img src="./images/Ermakov@1x_480.jpg" alt="фото Михайла Єрмакова" />
+          </picture>
+
           <div class="card__box">
             <h3 class="card__name">Михайло Єрмаков</h3>
             <p class="card__position">UI Designer</p>
